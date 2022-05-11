@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    /*rem html etiketine verilen font 
+    büyüklüğünü oransal olarak oluşturur.*/
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.5;/*satır yüksekliği*/
+    text-align: center; /*yazılıraı ortalama*/
+    background-color: #333;   
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding: 1.6rem 0;
+}
+
+img{/*main kısmında ekleme yaptık*/
+    width: 100%;
+    height: auto;
+}
+
+/*header*/
+ header{
+     height: 45rem;
+ }
+ header .bg-image{
+     background-image: url(img/bg.jpeg);
+     height: 45rem;
+     width: 100%;
+     background-size:cover ;
+     background-position: center;
+     opacity: 0.4;
+     position: absolute;
+     z-index: -1;
+ }
+
+ header h1{
+     padding: 11rem;
+     padding-bottom: 0;
+ }
+
+ .btn{
+     background:#333;
+     color: #fff;
+     border: 1px solid #666;
+     padding: 1.6rem 3.2rem;
+     margin: .5rem 0;
+     display: inline-block;
+     transition: all 0.3s;
+ }
+ .btn:hover{
+     background-color: #eaeaea;
+     color: #333;
+ }
+
+/*Section*/
+
+#section-a{
+    background-color: #eaeaea;
+    color: #333;
+    padding: 3.2rem 0;
+}
+
+#section-b{
+    padding: 2rem;
+}
+
+#section-b ul{
+    list-style: none;
+}
+
+#section-b li{
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.col-content{
+    padding: 1.5rem;
+}
+

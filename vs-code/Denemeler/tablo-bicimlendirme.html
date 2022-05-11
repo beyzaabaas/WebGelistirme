@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Table</title>
+</head>
+<style>
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    table th,table td{
+        border: 1px solid gray;
+        padding: 4px;
+    }
+    table th{
+        text-align: left;
+    }
+    table tr:nth-child(even){
+        background-color: rgb(201, 196, 196);
+    }
+    table tr:hover{
+        background-color: rgb(104, 104, 104);
+    }
+    .table-mor th{
+        background-color: rgb(88, 43, 119);
+        color: white;
+    }
+
+
+</style>
+
+<body>
+    <table class="table-mor">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Product 1</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Product 3</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>Product 4</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td>Product 5</td>
+                <td>Lorem ipsum dolor sit amet.</td>
+                <td>$70</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show-Hide Effects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    
+    <p>Beyza Baş</p>
+    <button id="slideup">Slide Up</button>
+    <button id="slidedown">Slide Down</button>
+    <button id="toggle">Toggle</button>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#slideup").click(function(){
+                $("p").slideUp(3000);
+            });
+
+            $("#slidedown").click(function(){
+                $("p").slideDown(2000,function(){
+                    alert("paragraf gösterildi");
+                });
+            });
+
+            $("#toggle").click(function(){
+                $("p").slideToggle("slow");
+            });
+        });
+    </script>
+</body>
+</html>

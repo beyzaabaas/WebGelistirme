@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Methods</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        .highlight{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery Helper Methods</h1>
+    <ul>
+        <li>JQuery Selectors</li>
+        <li>JQuery Methods</li>
+        <li>JQuery Animations</li>
+    </ul>
+
+    <input type="text" id="ad" placeholder="Adınız">
+    <input type="text" id="soyad" class="green" placeholder="Soyadınız">
+    <button id="btnKaydet" onclick="adsoyad();">Kaydet</button>
+
+    <img src="/18-JQuery/4-JQuery Methods/health.jpg" width="200">
+
+
+    <script>
+        console.log($("h1").text());
+        console.log($("ul li").text());
+        $("h1").text("Javascript");
+
+        console.log($("input").val());
+        $("input").val("sssss");
+
+        function adsoyad(){
+            var ad=$("#ad").val();
+            var soyad=$("#soyad").val();
+            console.log("Adınız ve Soyadınız:"+ad+" "+soyad);
+
+            //$("#ad").addClass("highlight");
+            $("#soyad").removeClass("green");
+            $("#ad").toggleClass("highlight");//eğer highlight classı eklenmişse çıkartır. eklenmemişse ekler.
+        }
+
+        $("img").attr("width","400");//bu şekilde istediğimiz bir html etiketinin attribute özelliğine ulaşabiliriz.
+        
+    </script>
+</body>
+</html>

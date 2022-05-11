@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css inherit</title>
+    <style>
+        body{
+            color: brown;
+            font-size: 20px;
+        }
+        ul{
+            color: darkgoldenrod;
+            font-size: 15px;
+        }
+        li{
+            color: yellowgreen;
+        }
+        .orange{
+            color: orange !important;
+        }
+        #passive{
+            color: gray;
+            font-size: 35px;
+        }
+        a{
+            color: inherit;
+        }
+        span{
+            color: red;
+            border: 1px solid green;
+        }
+        #inherit span{
+            color: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Komple Uygulamalı Web Geliştirme</h1>
+    <ul>
+        <li id="passive" class="orange">Html5</li>
+        <li>Css</li>
+        <li class="orange">Javascript</li>
+        <li><a href="#">Jquery</a></li>
+    </ul>
+    <div id="inherit" style="color: indigo;">Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing.</div>
+    <div style="color: lightcoral;">Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing.</div>
+    <div>Lorem ipsum <span>dolor sit amet</span> consectetur adipisicing.</div>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Box</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+       #message-box{
+        background-color: indigo;
+        text-align: center;
+        color: white;
+        
+       } 
+       #header{
+        cursor: pointer;
+        height: 25px;
+        padding: 20px;
+        border-bottom: 1px solid #fff;
+       }
+       #content{
+           height: 200px;
+           padding: 10px;
+           display: none;
+       }
+       #close{
+           float: right;
+       }
+       #close:hover{
+           color:black;
+       }
+    </style>
+</head>
+<body>
+    <div id="message-box">
+        <div id="header"> 
+            <span id="close" >X</span> Mesajınız Var!</div>
+        <div id="content">Seni Çok Seviyorum :) </div>
+    </div>
+
+    <script>
+        $(function(){
+            $("#header").click(function(){
+                $("#content").toggle("slow");
+            });
+
+            $("#close").click(function(){
+                $("#message-box").hide("slow");
+            });
+        });
+    </script>
+</body>
+</html>

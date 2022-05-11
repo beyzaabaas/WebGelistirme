@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Event</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .paragrafrenklendir{
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="p1">Web Developer Eğitimi</p>
+    <p id="p2">Web Developer Eğitimi</p>
+    <p class="paragraf">Web Developer Eğitimi</p>
+    <p class="paragraf">Web Developer Eğitimi</p>
+
+
+    <script>
+
+        $(document).ready(function(){
+            $(".paragraf").click(function(){
+               //alert("p click event");//p ye tıklandığında alert açtı
+               $(this).addClass("paragrafrenklendir");//burada ise p ye tıklandığında eklenen classın css kodları uygulandı.
+               /*yukarıda .paragraf yerine this yazma sebebimiz 
+               biz classı paragraf olan nesneye erişip click 
+               olayını çalıştırdık ve tekrar nesneye ulaşmamız 
+               gerekiyor. şayer thsi yerine .paragraf yazmış 
+               olsaydık tıkladığımız anda classı paragraf olan 
+               bütün elamanlar aynı anda css özelliklerini alırdı. 
+               bu olmasın diye yani sadece tıklanan eleman css
+               özelliklerini alsın diye this demeliyiz.*/
+            });
+        });
+
+    </script>
+    
+</body>
+</html>

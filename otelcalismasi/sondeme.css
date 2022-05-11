@@ -1,0 +1,618 @@
+/*Genel*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 6px;
+}
+body{
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    background-color: #fff;
+    font-weight: 30rem;
+    position: relative;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+a {
+    text-decoration: none;
+}
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+/*navbar*/
+nav ul{
+    list-style-type: none;
+}
+#nav{
+    width: 100%;
+    background: linear-gradient(#6f7070,#1b1b1b);/*gradientli navbar*/
+    color: #fff;
+    padding-bottom: 1.0rem;
+    padding-top: 1.0rem;
+    position: fixed;
+    z-index: 100;
+}
+#nav .container{
+    display: block;
+}
+#logo-box{
+    float: left;
+    padding-top: 0.8rem;
+}
+#logo-box .logo{
+    color: #fff;
+    font-size: 2.5rem;    
+}
+#nav-links{
+    float: right;
+}
+#nav-links .nav-item{
+    float: left;
+    margin: .4rem;
+}
+#nav-links .nav-link{
+    color: #fff;
+    font-size: 1.6rem;
+    display: block;
+    padding: 1.4rem;
+    transition: color .3s;
+}
+#nav-links .nav-link:hover{
+    color: #4ca8c4;
+}
+#logo-box img{
+    width: 10%;
+    margin-bottom: 1rem;
+}
+.logo{
+    text-decoration: none;
+}
+#nav-links .nav-icon{
+    display: none;
+}
+@media (max-width: 992px){
+    #logo-box{
+        float: none;
+        text-align: left;
+
+    }
+    #nav-links{
+        float: none;
+
+    }
+    #nav-links.responsive li:not(:first-child){
+        display: none;
+    }
+    #nav-links .nav-item {
+        float: none;
+        text-align: left;
+
+    }
+    #nav-links .nav-link{
+        font-size: 2rem;
+        padding-left: 0%;
+    }
+    #nav-links .nav-icon{
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 3.5rem;
+    }
+    #logo-box img{
+        width: 6%;
+        margin-bottom: 1rem;
+    }
+}
+/*header*/
+header{
+    width: 100%;
+    padding-top: calc(70px + 0rem);
+    padding-bottom: 0.5rem;
+    text-align: left;
+}
+header h1{
+    font-size: 4rem;
+}
+header h2{
+    font-size: 2.5rem;
+}
+header .baslik{
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(41, 41, 41);
+}
+header .bas{
+    font-weight:600; 
+    font-size: 18px; 
+    text-align: center; 
+    color:rgb(151, 68, 68);
+}
+header .lead{
+    font-size: 24px;
+}
+div .size{
+    font-size: 16px;
+}
+.jumbotron{
+    width: 100%;
+    height: 40rem;
+    text-align: left;
+    background-image: url(img/jumbutron2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.jumbotron .btn{
+    width: 10%;
+    height: 3rem;   
+}
+.jumbotron-text{
+    color: #fff;
+    padding-top: 9rem;    
+}
+/*section text*/
+.blog-post{
+
+    width: 100%;
+}
+.blog-text .ko{
+    text-align: left;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    color: rgb(77, 77, 77);
+}
+
+.blog-text .wt{
+    text-align: left;
+    font-size: 2.9rem;
+    color:rgb(223, 4, 4);
+}
+.blog-text .mini{
+    text-align: left;
+    font-size: 4.6rem;
+    color:rgb(223, 4, 4);
+}
+.blog-text-body{
+    margin-left: 5rem;
+    font-size: 1.6rem;
+}
+.blogg{
+   /* border-bottom: 0.1px solid rgb(218, 218, 218);*/
+    border-top: 0.1px solid rgb(218, 218, 218);
+    width: 100%;
+}
+.bold{
+    font-weight: bold;
+    color:  rgb(59, 59, 59);;
+}
+/*section-col*/
+.col-background{
+    background-color: rgb(248, 248, 248);
+    border-bottom: 0.1px solid rgb(218, 218, 218) ;
+    border-top: 0.1px solid rgb(218, 218, 218) ;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#kurumsal .col{
+    float: left;
+    width: 33.333%;
+    padding: 30px;
+    margin-top: 60px;
+}
+.card{
+    height: 400px;
+    background: #fff;
+    border-radius: 1rem;
+    color: rgb(88, 88, 88);
+    text-align: center;
+    padding-top:50px;
+}
+.card-style{
+    font-size: 30px;
+}
+.card-text{
+    font-size: 16px; 
+    color: rgb(133, 132, 132);
+}
+#kurumsal i{
+    font-size: 70px;  
+    color: lightsalmon;
+    padding-top: 30px;
+
+}
+.card-1{
+    -webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+}
+
+.card-2{
+    -webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+}
+
+.card-3{
+    -webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+
+}
+.card-1:hover{
+    -webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    background-color: rgba(41, 41, 41, 0.068);
+    transition-duration: 0.3s;
+    
+}
+.card-2:hover{
+    -webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    background-color: rgba(41, 41, 41, 0.068);
+    transition-duration: 0.3s;
+}
+.card-3:hover{
+    -webkit-box-shadow:10px 10px 20px 2px rgba(0,0,0,.3);
+    -moz-box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    box-shadow: 10px 10px 20px 2px rgba(0,0,0,.3);
+    background-color: rgba(41, 41, 41, 0.068);
+    transition-duration: 0.3s;
+}
+
+/*section-parallax*/
+.parallax{
+    background-image: url(img/parallax.jpg);
+    background-position: center;
+    width: 100%;
+    height: 20rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0.1px solid rgb(218, 218, 218) ;
+}
+section .title{
+    font-size: 5rem;
+    color: #fff;
+    font-weight: 400;
+    font-style: italic;
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+.parallax p{
+    padding-left: 50px; 
+    font-size: 16px; 
+    font-style: italic; 
+    color: #fff;
+}
+
+/*proporties*/
+
+.background{
+    
+    background-image: url(img/background.jpg);
+    background-position: center;
+    padding-top:10px;
+}
+.urun-text{
+    padding-top: 70px; 
+    padding-left: 0px; 
+    padding-bottom: 20px;
+    font-size: 30px; 
+    font-style: italic;
+}
+#urun-hakkinda{
+    font-size: 15px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+#urun-hakkinda i{
+    float: left;
+    font-size: 50px;
+    position: relative;
+    margin-left: 20px;
+}
+#urun-hakkinda .col{
+    float: left;
+    width: 40%;
+    margin-left: 70px;
+   
+}
+#urun-hakkinda p{
+    margin-left: 90px;  
+}
+#urun-hakkinda h4{
+    margin-left: 90px;  
+}
+#urun-hakkinda hr{
+   margin-left: 90px; 
+   width: 80%;
+}
+
+/*footer*/
+footer{
+    margin-top: 0rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: linear-gradient(#6f7070,#1b1b1b);
+    color: #fff;
+    text-align: center;
+}
+ footer .col{
+    float: left;
+    width: 33.333%;
+    height: 20rem;
+}
+footer h4{
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+footer p{
+    margin-top: 0rem;
+    font-size: 1.4rem;
+}
+.btn-social{
+    width: 40%;
+    height: 4rem;
+    border-radius: 50%;
+    font-size: 4rem;
+    line-height: 1.5rem;
+
+}
+.btn-social i:hover{
+    color:tomato;
+    transition-duration: 0.1s;
+}
+footer li{
+    display: inline-block;
+    margin-right: 2rem;
+}
+/*about*/
+#about{
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 40px;
+    color: #fff;
+    background-image: url(img/aboutt.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 0.1px solid rgb(218, 218, 218) ;
+
+}
+#about h4{
+    font-size: 4rem;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    font-style: italic;
+}
+#about h5{
+    font-size: 2rem;
+    line-height: 3rem;
+
+
+}
+#about-style{
+    width: 50%;
+
+}
+.about-text{
+    margin-left: 200px;
+    margin-right: 200px;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+.about-text:hover{
+    transform: scale(1.3);
+    z-index: 2;
+
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 540px;
+    }
+    html{
+        font-size: 7px;
+    }
+    #kurumsal .col{
+        float: left;
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .parallax{
+        height: 25rem;
+    }
+    #urun-hakkinda .col{
+        width: 100%;
+        display: block;
+        margin-left: 0px;
+        margin-bottom: 4rem;
+    }
+    #urun-hakkinda i{
+        float: left;
+        font-size: 30px;
+        position: relative;
+        margin-left: 30px;
+    }
+   
+    .about-text{
+        margin-left: 70px;
+        margin-right: 70px;
+        
+    }
+    footer .social{
+        margin-left: 4.3rem;
+    }
+    header{
+        padding-top: 60px;
+    }
+    footer .col{
+        width: 100%;}
+}
+
+@media screen and (min-width: 576px) {
+        .container{
+            max-width: 540px;
+        }
+        html{
+            font-size: 7px;
+        }
+        #kurumsal .col{
+            float: left;
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+        }
+        .parallax{
+            height: 25rem;
+        }
+        #urun-hakkinda .col{
+            width: 100%;
+            display: block;
+            margin-left: 0px;
+            margin-bottom: 4rem;
+        }
+        #urun-hakkinda i{
+            float: left;
+            font-size: 30px;
+            position: relative;
+            margin-left: 40px;
+        }
+       
+        .about-text{
+            margin-left: 100px;
+            margin-right: 100px;
+            
+        }
+        footer .social{
+            margin-left: 4.3rem;
+        }
+        header{
+            padding-top: 60px;
+        }
+        
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+            max-width: 720px;
+    }
+    html{
+        font-size: 8px;
+    }
+    footer .social{
+        margin-left: 3.3rem;
+    }
+    .parallax{
+        height: 22rem;
+    }
+    #urun-hakkinda .col{
+        width: 50%;
+        display: block;
+        margin-left: 0rem;
+    }
+    #urun-hakkinda i{
+        float: left;
+        font-size: 40px;
+        position: relative;
+        margin-left: 25px;
+    }
+    #urun-hakkinda p{
+        margin-left: 80px;  
+    }
+    #urun-hakkinda h4{
+        margin-left: 80px;  
+    }
+    #urun-hakkinda hr{
+       margin-left: 80px; 
+       
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container{
+            max-width: 960px;
+    }
+    html{
+        font-size: 9px;
+    }
+    #kurumsal .col{
+        float: left;
+        width: 33.333%;
+        display: block;
+       
+    }
+    #urun-hakkinda .col{
+        width: 50%;
+        display: block;
+        margin-left: 0px;
+    }
+    #urun-hakkinda i{
+        float: left;
+        font-size: 40px;
+        position: relative;
+        margin-left: 40px;
+    }
+    footer .social{
+        margin-left: 3.7rem;
+    }
+    .parallax{
+        height: 20rem;
+    }
+    #urun-hakkinda p{
+        margin-left: 90px;  
+    }
+    #urun-hakkinda h4{
+        margin-left: 90px;  
+    }
+    #urun-hakkinda hr{
+       margin-left: 90px; 
+       
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+            max-width: 1140px;
+    }
+    html{
+        font-size: 10px;
+    }
+    #urun-hakkinda i{
+        float: left;
+        font-size: 50px;
+        position: relative;
+        margin-left: 20px;
+    }
+    footer .social{
+        margin-left: 3rem;
+    }
+}
+

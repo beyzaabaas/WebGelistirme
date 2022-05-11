@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <a href="#">link</a>
+    <h3>JQuery DErsleri</h3>
+    <ul id="liste">
+        <li class="item">Jquery References</li>
+        <li>Selectors <a href="#">link</a></li>
+        <li class="item">Jquery Plugins</li>
+    </ul>
+
+    <ul>
+        <li class="item">Jquery References</li>
+        <li>Selectors <a href="#">link</a></li>
+        <li class="item">Jquery Plugins</li>
+    </ul>
+
+
+
+    <script>
+        console.log($("#liste"));//consolea ul nesnesini yazdırdık.
+        console.log($("h3"));
+        console.log($("ul"));
+        console.log($("li"));
+        console.log($(".item"));
+        console.log($("a"));
+        console.log($("li a"));//alttaki ile aynı
+        console.log($("ul li a"));
+        console.log($("#liste a"));
+
+    </script>
+</body>
+</html>
